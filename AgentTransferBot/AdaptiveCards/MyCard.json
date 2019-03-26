@@ -1,0 +1,124 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Welcome to Civic AI",
+          "weight": "bolder",
+          "size": "large"
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "This is Larry bot",
+                  "weight": "bolder",
+                  "size": "small",
+                  "wrap": true
+                },
+                {
+                  "type": "TextBlock",
+                  "spacing": "none",
+                  "text": "",
+                  "isSubtle": true,
+                  "wrap": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "I'm an expert in the following topics",
+          "wrap": true
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "",
+              "value": ""
+            },
+            {
+              "title": "",
+              "value": ""
+            },
+            {
+              "title": "",
+              "value": ""
+            },
+            {
+              "title": "",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Quick Quote",
+      "data": {
+        "action": "quickquote"
+      },
+      "card": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "Input.Text",
+            "id": "getQuickQuote",
+            "title": "Get quick quote"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "OK"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "About Civic",
+      "data": {
+        "action": "aboutCivic"
+      },
+      "card": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "Input.Text",
+            "id": "aboutCivic",
+            "title": "About Civic"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "aboutCivic"
+          }
+        ]
+
+      }
+    }
+  ]
+}
