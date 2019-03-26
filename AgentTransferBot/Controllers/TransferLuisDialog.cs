@@ -16,7 +16,7 @@ using System.Web;
 namespace AgentTransferBot
 {
     [Serializable]
-    [LuisModel("b88a797a-4876-4bc5-a429-6a7ea0f6ca9f", "31508b3f03374b689d159876e01f3a10a")]
+    [LuisModel("b88a797a-4876-4bc5-a429-6a7ea0f6ca9f", "31508b3f03374b689d159876e01f3a10")]
     public class TransferLuisDialog : LuisDialog<object>
     {
         private readonly IUserToAgent _userToAgent;

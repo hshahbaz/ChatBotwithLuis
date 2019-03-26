@@ -237,16 +237,6 @@
     <Content Include="LuisModel\AgentTransfer.json" />
     <Content Include="AdaptiveCards\quotes.json" />
     <Content Include="AdaptiveCards\MyCard.json" />
-    <None Include="Properties\PublishProfiles\civicbot - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot - FTP1.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot - FTP2.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot - Web Deploy1.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot - Web Deploy2.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot2 - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\civicbot2 - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\xellbotwithagent - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\xellbotwithagent - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -256,6 +246,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
